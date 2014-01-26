@@ -7,24 +7,41 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="{{site.baseurl}}css/screen.css">
+        </link>
+        <link rel="stylesheet" href="{{site.baseurl}}css/custom.css">
+        </link>
     </head>
     <body>
       <div class="container">
-        <a href="{{site.baseurl}}" class="span-7">
+        <div class="span-24 last header">
           <h1>
-            Главная
+            ИП Уйманова
           </h1>
-        </a>
-        <a href="{{site.baseurl}}about" class="span-7">
-          <h1>
-            О компании
-          </h1>
-        </a>
-        <a href="{{site.baseurl}}contacts" class="span-7 last">
-          <h1>
-            Контакты
-          </h1>
-        </a>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div>
+          <a href="{{site.baseurl}}" class="span-6">
+            <h2>
+              Главная
+            </h2>
+          </a>
+          <a href="{{site.baseurl}}about" class="span-6">
+            <h2>
+              О компании
+            </h2>
+          </a>
+          <a href="{{site.baseurl}}certificates" class="span-6">
+            <h2>
+              Сертификаты
+            </h2>
+          </a>
+          <a href="{{site.baseurl}}contacts" class="span-6 last">
+            <h2>
+              Контакты
+            </h2>
+          </a>
+        </div>
         <div class="clearfix">
         </div>
         {{ content }}
