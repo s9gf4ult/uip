@@ -6,10 +6,27 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="{{site.baseurl}}/css/screen.css">
+        <link rel="stylesheet" href="{{site.baseurl}}css/screen.css">
     </head>
     <body>
       <div class="container">
+        <a href="{{site.baseurl}}" class="span-7">
+          <h1>
+            Главная
+          </h1>
+        </a>
+        <a href="{{site.baseurl}}about" class="span-7">
+          <h1>
+            О компании
+          </h1>
+        </a>
+        <a href="{{site.baseurl}}contacts" class="span-7 last">
+          <h1>
+            Контакты
+          </h1>
+        </a>
+        <div class="clearfix">
+        </div>
         {{ content }}
       </div>
     </body>

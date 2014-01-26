@@ -1,0 +1,7 @@
+---
+permalink: contacts
+layout: default
+title: Контакты
+---
+
+Контакты
