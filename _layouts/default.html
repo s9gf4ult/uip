@@ -14,12 +14,22 @@
     <body>
       <div class="container">
         <div class="span-24 last header">
-          <h1>
-            ИП Уйманова
-          </h1>
+          <div class="span-3">
+            <img src="{{site.baseurl}}pictures/header.png" />
+          </div>
+          <div class="span-16 last">
+            <div class="top-text">
+              Разработка экологической документации
+            </div>
+            <div class="small-top-text">
+              индивидуальный предприниматель
+            </div>
+            <div class="small-top-text">
+              Светлана Уйманова
+            </div>
+          </div>
         </div>
-        <div class="clearfix">
-        </div>
+        <div class="clearfix" />
         <div>
           <a href="{{site.baseurl}}" class="span-6">
             <h2>
@@ -42,9 +52,10 @@
             </h2>
           </a>
         </div>
-        <div class="clearfix">
+        <div class="clearfix" />
+        <div class="content">
+          {{ content }}
         </div>
-        {{ content }}
       </div>
     </body>
 </html>

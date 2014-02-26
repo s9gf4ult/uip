@@ -1,5 +1,5 @@
 ---
-permalink: certificates
+permalink: legitimacy
 layout: default
 title: Сертификаты
 ---
