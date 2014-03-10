@@ -1,4 +1,4 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
-baseurl: http://s9gf4ult.github.io/uip/
+# baseurl: http://s9gf4ult.github.io/uip/

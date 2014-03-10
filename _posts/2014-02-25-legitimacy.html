@@ -2,17 +2,40 @@
 permalink: legitimacy
 layout: default
 title: Сертификаты
+pictures:
+  - full: pictures/certificates/full/cert-117.png
+    small: pictures/certificates/small/cert-117.png
+  - full: pictures/certificates/full/cert-317.png
+    small: pictures/certificates/small/cert-317.png
+  - full: pictures/certificates/full/cert-890-05.png
+    small: pictures/certificates/small/cert-890-05.png
+  - full: pictures/certificates/full/Квалиф. аттестат №205-000.png
+    small: pictures/certificates/small/Квалиф. аттестат №205-000.png
+  - full: pictures/certificates/full/Приложение к аттестату №205-000.png
+    small: pictures/certificates/small/Приложение к аттестату №205-000.png
+  - full: pictures/certificates/full/Свидетельство №1991-000.png
+    small: pictures/certificates/small/Свидетельство №1991-000.png
+  - full: pictures/certificates/full/Свидетельство № 449.png
+    small: pictures/certificates/small/Свидетельство № 449.png
+  - full: pictures/certificates/full/Свидетельство №52.png
+    small: pictures/certificates/small/Свидетельство №52.png
+  - full: pictures/certificates/full/Свидетельство нефтаников и газовиков.png
+    small: pictures/certificates/small/Свидетельство нефтаников и газовиков.png
+  - full: pictures/certificates/full/Сертификат №1189.png
+    small: pictures/certificates/small/Сертификат №1189.png
+  - full: pictures/certificates/full/Удостоверение №0301.png
+    small: pictures/certificates/small/Удостоверение №0301.png
+  - full: pictures/certificates/full/Удостоверение №2895-000.png
+    small: pictures/certificates/small/Удостоверение №2895-000.png
+  - full: pictures/certificates/full/Удостоверение экол. аудитора № 17-ат-000.png
+    small: pictures/certificates/small/Удостоверение экол. аудитора № 17-ат-000.png
 ---
 
-<div class="span-12">
-  <img src="{{site.baseurl}}pictures/certificates/cert-117.png" class="cert-image" />
+{% for picture in page.pictures %}
+<div class="span-6 {% cycle '', '', '', 'last'%}">
+  <a href="{{site.baseurl}}{{picture.full}}">
+    <img src="{{site.baseurl}}{{picture.small}}" class="cert-image" />
+  </a>
 </div>
-<div class="span-12 last">
-  <img src="{{site.baseurl}}pictures/certificates/cert-317.png" class="cert-image" />
-</div>
-
-<div class="clearfix" />
-
-<div class="span-12">
-  <img src="{{site.baseurl}}pictures/certificates/cert-890-05.png" class="cert-image" />
-</div>
+{% cycle '', '', '', '<div class="clearfix"></div>' %}
+{% endfor %}
