@@ -2,40 +2,69 @@
 permalink: legitimacy
 layout: default
 title: Сертификаты
-pictures:
-  - full: pictures/certificates/full/cert-117.png
-    small: pictures/certificates/small/cert-117.png
-  - full: pictures/certificates/full/cert-317.png
-    small: pictures/certificates/small/cert-317.png
-  - full: pictures/certificates/full/cert-890-05.png
-    small: pictures/certificates/small/cert-890-05.png
-  - full: pictures/certificates/full/Квалиф. аттестат №205-000.png
-    small: pictures/certificates/small/Квалиф. аттестат №205-000.png
-  - full: pictures/certificates/full/Приложение к аттестату №205-000.png
-    small: pictures/certificates/small/Приложение к аттестату №205-000.png
-  - full: pictures/certificates/full/Свидетельство №1991-000.png
-    small: pictures/certificates/small/Свидетельство №1991-000.png
-  - full: pictures/certificates/full/Свидетельство № 449.png
-    small: pictures/certificates/small/Свидетельство № 449.png
-  - full: pictures/certificates/full/Свидетельство №52.png
-    small: pictures/certificates/small/Свидетельство №52.png
-  - full: pictures/certificates/full/Свидетельство нефтаников и газовиков.png
-    small: pictures/certificates/small/Свидетельство нефтаников и газовиков.png
-  - full: pictures/certificates/full/Сертификат №1189.png
-    small: pictures/certificates/small/Сертификат №1189.png
-  - full: pictures/certificates/full/Удостоверение №0301.png
-    small: pictures/certificates/small/Удостоверение №0301.png
-  - full: pictures/certificates/full/Удостоверение №2895-000.png
-    small: pictures/certificates/small/Удостоверение №2895-000.png
-  - full: pictures/certificates/full/Удостоверение экол. аудитора № 17-ат-000.png
-    small: pictures/certificates/small/Удостоверение экол. аудитора № 17-ат-000.png
+pictures1:
+  - path: pictures/certificates/full/udost-2895.png
+    name: Тюмень, ЦЭО ТЮМГУ 2011, «Экологическое аудирование и системы управления окружающей средой на предприятии», Удостоверение №2895.
+  - path: pictures/certificates/full/udost-04-02-08-640.png
+    name: Москва, Национальная экологическая аудиторская палата, 2011, Удостоверение эколога-аудитора №Н-04-02-08-640.
+  - path: pictures/certificates/full/cert-1189.png
+    name: Тюмень, Сбербанк-АСТ, 2011, 2Методика проведения торгов на электронной торговой площадке ЗАО «Сбербанк-АСТ». Порядок проведения аукциона в соответствии с положениями №94-ФЗ, Сертификат №001189.
+  - path: pictures/certificates/full/udost-009-562.png
+    name: Тюмень, ТГАСУ, ФА по строительству и ЖКХ, 2009, «Инженерно-экологические и гидрометеорологические изыскания», Удостоверение №009/562.
+
+pictures2:
+  - path: pictures/certificates/full/svid-neft-gas.png
+    name: Москва, НТО нефтяников и газовиков им. академика И.М. Губкина, 2009, «Охрана окружающей  среды и промышленная безопасность на объектах нефтегазового комплекса», Свидетельство.
+  - path: pictures/certificates/full/svid-1991.png
+    name: Тюмень, ЦЭО ТЮМГУ, 2008, «Экологическое аудирование и системы управления окружающей средой», Свидетельство №1991.
+  - path: pictures/certificates/full/cert-317.png
+    name: Тюмень, ЦЭО ТЮМГУ, 2008, «Переход к новой системе госуправления и государственного экологического контроля при проектировании, строительстве и эксплуатации», Сертификат №317.
+  - path: pictures/certificates/full/cert-890-05.png
+    name: Тюмень, Екатеринбург, Институт систем качества, 2005, «Проведение внутренних аудитов по ГОСТР ИСО 9001-2001», Сертификат №890/5.
+  - path: pictures/certificates/full/cert-117.png
+    name: Тюмень, ЦЭО ТЮМГУ, 2005, «Плата за негативное воздействие на окружающую среду. Отчетность в сфере обращения с отходами. Новая система госуправления в области охраны окружающей среды», Сертификат №117.
+  - path: pictures/certificates/full/cert-469.png
+    name: С-Петербург, ООО «Интеграл», 1999, «Охрана атмосферного воздуха. Программные средства серии «Эколог», Сертификат  №469.
+  - path: pictures/certificates/full/udost-301.png
+    name: С-Петербург, ООО «Интеграл», 1999, «Охрана атмосферного воздуха. Программные средства серии «Эколог»,  «Теоретические основы охраны атмосферного воздуха», Удостоверение №0301.
+  - path: pictures/certificates/full/svid-449.png
+    name: С-Петербург, ООО «Интеграл», 1999, «Охрана атмосферного воздуха. Программные средства серии «Эколог», Свидетельство №449
+  - path: pictures/certificates/full/svid-52.png
+    name: С-Петербург, Государственный комитет РФ по охране окружающей среды, НИИ «Атмосфера», 1998, «Охрана атмосферного воздуха. Нормативное, методическое и техническое обеспечение», Эксперт по нормированию выбросов загрязняющих веществ в атмосферу, Свидетельство №52.
 ---
 
-{% for picture in page.pictures %}
-<div class="span-6 {% cycle '', '', '', 'last'%}">
-  <a href="{{site.baseurl}}{{picture.full}}">
-    <img src="{{site.baseurl}}{{picture.small}}" class="cert-image" />
-  </a>
-</div>
-{% cycle '', '', '', '<div class="clearfix"></div>' %}
+<ul>
+{% for picture in page.pictures1 %}
+<li>
+  <p>
+    <a href="{{site.baseurl}}{{picture.path}}">
+      {{picture.name}}
+    </a>
+  </p>
+</li>
 {% endfor %}
+
+<li>
+  <p>
+    <a href="{{site.baseurl}}pictures/certificates/full/atterstat-205.png">
+      Тюмень, ТГАСУ, ФА по строительству и ЖКХ, 2009, «Инженерно-экологические и гидрометеорологические изыскания для строительства зданий и сооружений I и II уровня ответственности», Квалификационный аттестат  №205.
+    </a>
+    <p>
+      <a href="{{site.baseurl}}pictures/certificates/full/atterstat-pril-205.png">
+        Приложение к аттестату №205
+      </a>
+    </p>
+  </p>
+</li>
+
+{% for picture in page.pictures2 %}
+<li>
+  <p>
+    <a href="{{site.baseurl}}{{picture.path}}">
+      {{picture.name}}
+    </a>
+  </p>
+</li>
+{% endfor %}
+
+</ul>
