@@ -1,7 +1,0 @@
----
-permalink: services
-layout: default
-title: Услуги
----
-
-Услуги
