@@ -1,7 +1,48 @@
 
 html {
-  font-size: 22pt;
+  font-size: 20pt;
   text-align: justify;
+}
+
+body {
+  background: #7AB4D3;
+}
+
+.container {
+  background:white;
+}
+
+.content {
+  margin: 30px 40px 0px 40px;
+}
+
+.header {
+  margin: 40px 40px 20px 40px;
+}
+
+.header-links-background {
+  background: linear-gradient(to top, #032547, #1B5C8A);
+}
+
+.header-links {
+  margin: 0px 40px 0px 40px;
+}
+
+.header-links * {
+  font-size: 22pt;
+  color: white;
+}
+
+.header-links a:hover {
+  color: #E0E0E0;
+}
+
+.header-link {
+  margin-left: 30px;
+}
+
+.header-link:first-child {
+  margin-left: 0px;
 }
 
 tbody tr:nth-child(even) td, tbody tr.even td {
@@ -13,9 +54,6 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.header {
-  margin-top: 40px;
-}
 
 .big-skip {
   margin-top: 2rem;
