@@ -13,7 +13,7 @@ body {
 }
 
 .content {
-  margin: 30px 40px 0px 40px;
+  margin: 30px 40px 40px 40px;
 }
 
 .header {
@@ -21,6 +21,7 @@ body {
 }
 
 .header-links-background {
+  background: #1B5C8A;
   background: linear-gradient(to top, #032547, #1B5C8A);
 }
 
