@@ -29,21 +29,21 @@ body {
   margin: 0px 40px 0px 40px;
 }
 
-.header-links * {
-  font-size: 22pt;
+.header-link {
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
   color: white;
+  border-left: 2px solid #336BA3;
+  text-decoration: none;
 }
 
-.header-links a:hover {
+.header-link:hover {
   color: #E0E0E0;
 }
 
-.header-link {
-  margin-left: 30px;
-}
 
 .header-link:first-child {
-  margin-left: 0px;
+  border-left: none;
 }
 
 tbody tr:nth-child(even) td, tbody tr.even td {
@@ -73,19 +73,32 @@ p {
   list-style-type: circle;
 }
 
+.align-right {
+  text-align: right;
+}
+
 .valign-top * {
   vertical-align: top;
 }
 
-.top-text {
+.no-padding * {
+  padding: 0px !important;
+}
+
+.big-top-text {
   font-family: sans-serif;
   font-size: 25pt;
   text-align: center;
 }
 
-.small-top-text {
+.top-text {
   font-family: sans-serif;
   font-size: 20pt;
+  text-align: center;
+}
+
+.small-top-text {
+  font-family: sans-serif;
   text-align: center;
 }
 
